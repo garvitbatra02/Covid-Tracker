@@ -1,0 +1,46 @@
+.corona img{
+    animation: gocorona 3s linear  infinite ;
+}
+@keyframes gocorona {
+    0%{
+        transform: rotate(0);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.imageleftside img{
+    animation:heartbeat 5s linear infinite ;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(0.75);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(0.75);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(0.75);
+    }
+}
+@media only screen and (max-width:551px){
+    .mainhome{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0vh;
+    }
+    .message{
+        position: relative;
+        margin-left: 5vw;
+    }
+}
