@@ -16,7 +16,7 @@ export default class Countrywise extends Component {
 
      handleOnchange=(event)=>{
         // console.log("on change");
-        if(event.target.value==""){
+        if(event.target.value===""){
             this.setState({text:""});
         }
         this.setState({current:event.target.value});
@@ -41,15 +41,15 @@ export default class Countrywise extends Component {
 
 
                
-                <div class="input-group">
-  <div class="form-outline">
-    <input type="search" id="form1" class="form-control" onChange={this.handleOnchange} value={this.state.current}/>
+                <div className="input-group">
+  <div className="form-outline">
+    <input type="search" id="form1" className="form-control" onChange={this.handleOnchange} value={this.state.current}/>
     
   </div>
   
   <div className="buttondiv">
-  <button type="button" class="btn btn-danger" onClick={this.clickbtn}><img src="https://img.icons8.com/ios/50/000000/search--v1.png" width="20px" style={{color:"white"}}/>
-    <i class="fas fa-search"></i>
+  <button type="button" className="btn btn-danger" onClick={this.clickbtn}><img src="https://img.icons8.com/ios/50/000000/search--v1.png" alt="button" width="20px" style={{color:"white"}}/>
+    
   </button>
   </div>
 
@@ -64,16 +64,16 @@ export default class Countrywise extends Component {
                      {this.state.countrydata.map((element)=>{
                         
 
-                        if(this.state.text==""){
+                        if(this.state.text===""){
 
-                        return ( <Countrycard country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag}/>
+                        return ( <Countrycard key={element.country} country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag }/>
                         );
                         }
                         else if(element.country.toLowerCase().includes(this.state.text)){
-                            return ( <Countrycard country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag}/>
+                            return ( <Countrycard key={element.country} country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag}/>
                         );
                         }
-
+                        return <div></div>;
                     })} 
                     
                    

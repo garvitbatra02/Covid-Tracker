@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Line} from 'react-chartjs-2'
-import Select from 'react-select'
+
 import "./Vaccination.css"
 export default class Chart_india extends Component {
 
@@ -29,10 +29,10 @@ export default class Chart_india extends Component {
             // let newarray=this.state.confirmedcases;
             // newarray.push(this.state.datesobject[element].total.confirmed);
             // this.setState({confirmedcases:newarray,dates:dateval});
-            if(element=="TT"){
+            if(element==="TT"){
                 continue;
             }
-            if(element=='UN'){
+            if(element==='UN'){
                 
                 continue;
             }
@@ -61,7 +61,7 @@ export default class Chart_india extends Component {
             }
 
             
-            if(datedata[lastdate].total==undefined){
+            if(datedata[lastdate].total===undefined){
                 
                 continue;
             }

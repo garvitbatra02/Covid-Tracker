@@ -45,13 +45,9 @@ fetchcovidata= async()=>{
                             <tbody>
                              {this.state.statewisedata.map((element)=>{
 
-                                if(element.state!="State Unassigned"){
-
+                                if(element.state!=="State Unassigned"){
 
                     return (   
-
-
-                    
                         <tr>
                                 <td>{element.state}</td>
                                 <td>{element.confirmed}</td>
@@ -60,7 +56,9 @@ fetchcovidata= async()=>{
                                 <td>{element.active}</td>
                                
                             </tr>
-                    )};
+                    )}
+                    
+
                 })}
                 </tbody>
                         

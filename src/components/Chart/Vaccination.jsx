@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Line} from 'react-chartjs-2'
-import Select from 'react-select'
+
 import "./Vaccination.css"
 export default class Vaccination extends Component {
     state={
@@ -19,10 +19,10 @@ export default class Vaccination extends Component {
         let temparrayperstate2=[];
         for(const element in data){
         
-            if(element=="TT"){
+            if(element==="TT"){
                 continue;
             }
-            if(element=='UN'){
+            if(element==='UN'){
                 continue;
             }
             let newstatearray=this.state.statesarray;
@@ -40,7 +40,7 @@ export default class Vaccination extends Component {
             }
 
             
-            if(datedata[lastdate].total==undefined ){
+            if(datedata[lastdate].total===undefined ){
                 
                 continue;
             }

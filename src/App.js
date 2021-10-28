@@ -1,7 +1,7 @@
 
 import './App.css';
 import Chart_india from './components/Chart/Chart_india';
-import Statechart from './components/Chart/Statechart';
+
 import Vaccination from './components/Chart/Vaccination';
 import Countrywise from './components/countrywise/Countrywise';
 import Home from './components/Home/Home';
