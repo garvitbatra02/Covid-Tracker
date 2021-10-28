@@ -1,6 +1,6 @@
 
 import './App.css';
-import Chart_india from './components/Chart/Chart_india';
+import Chartindia from './components/Chart/Chartindia';
 
 import Vaccination from './components/Chart/Vaccination';
 import Countrywise from './components/countrywise/Countrywise';
@@ -42,7 +42,7 @@ import {
           <Route exact path="/World"><Countrywise/></Route>
           <Route exact path="/Indiasummary"><Indiasummary/></Route>
           <Route exact path="/statewise"><Statewise/></Route>
-          <Route exact path="/casesstats"><Chart_india/></Route>
+          <Route exact path="/casesstats"><Chartindia/></Route>
           <Route exact path="/vaccination"><Vaccination/></Route>
           
 

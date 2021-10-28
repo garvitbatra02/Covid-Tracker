@@ -56,8 +56,9 @@ fetchcovidata= async()=>{
                                 <td>{element.active}</td>
                                
                             </tr>
+                            
                     )}
-                    
+                    return (<tr></tr> )
 
                 })}
                 </tbody>

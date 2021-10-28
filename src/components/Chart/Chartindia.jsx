@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Line} from 'react-chartjs-2'
 
 import "./Vaccination.css"
-export default class Chart_india extends Component {
+export default class Chartindia extends Component {
 
     state={
         statesarray:[],
