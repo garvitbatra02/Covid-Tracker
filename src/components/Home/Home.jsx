@@ -3,7 +3,7 @@ import "./Home.css"
 export default class Home extends Component {
     render() {
         return (
-            <div className="mainhome" style={{display:"flex",justifyContent:"center",position:"relative",marginTop:"15vh"}}>
+            <div className="mainhome" style={{display:"flex",justifyContent:"center",position:"relative",marginTop:"6vh"}}>
                 <div className="imageleftside" style={{marginRight:"6vw",marginLeft:"6vw"}}>
                 <img src="https://ostroda.salezjanie.pl/sites/default/files/styles/medium/public/aktualnosci/zdjecia/2018/08/1964046_1024x0r72_h638e6.png?itok=0ctX3fPC" alt="" width="320px"/>
                     
