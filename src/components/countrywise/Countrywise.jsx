@@ -69,7 +69,7 @@ export default class Countrywise extends Component {
                         return ( <Countrycard key={element.country} country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag }/>
                         );
                         }
-                        else if(element.country.toLowerCase().includes(this.state.text)){
+                        else if(element.country.toLowerCase().includes(this.state.text.toLowerCase())){
                             return ( <Countrycard key={element.country} country={element.country} Cases={element.cases} Active={element.active} Recovered={element.recovered} Deaths={element.deaths} Tests={element.tests} flaglink={element.countryInfo.flag}/>
                         );
                         }
