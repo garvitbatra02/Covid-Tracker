@@ -46,6 +46,7 @@ fetchcovidata= async()=>{
                              {this.state.statewisedata.map((element)=>{
 
                                 if(element.state!=="State Unassigned"){
+                                    if(element.state!=="Total"){
 
                     return (   
                         <tr>
@@ -57,7 +58,8 @@ fetchcovidata= async()=>{
                                
                             </tr>
                             
-                    )}
+                    )
+                             }}
                     return (<tr></tr> )
 
                 })}

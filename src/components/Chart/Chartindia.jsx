@@ -16,19 +16,11 @@ export default class Chartindia extends Component {
         let response=await fetch("https://data.covid19india.org/v4/min/timeseries.min.json");
         let data=await response.json();
         console.log(data);
-            // let statenameval=this.state.statename;
-
-
-        //  this.setState({datesobject:data[statenameval].dates});
+            
 
         let temparrayperstate=[];
         for(const element in data){
-            // console.log(element);
-            // const dateval=this.state.dates;
-            // dateval.push(element);
-            // let newarray=this.state.confirmedcases;
-            // newarray.push(this.state.datesobject[element].total.confirmed);
-            // this.setState({confirmedcases:newarray,dates:dateval});
+           
             if(element==="TT"){
                 continue;
             }
@@ -43,19 +35,16 @@ export default class Chartindia extends Component {
 
 
             const datedata=data[element].dates;
-            // let confirmedperstate=0;
-            // let newdatearray=[];
+ 
       
             let lastdate;
             for (const dates in datedata) {
-            //     // console.log(datedata[dates].total.confirmed);
+           
                 lastdate=dates;
                     
                    
                         
-                    
-            //     confirmedperstate+=datedata[dates].total.confirmed  ;
-            //     temptotalindan.push(confirmedperstate);
+           
               
                 
             }
@@ -67,64 +56,22 @@ export default class Chartindia extends Component {
             }
 
 
-            /************ */
-
-
-            // var today = new Date();
-            // var dd = String(today.getDate()-1).padStart(2, '0');
-            // var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            // var yyyy = today.getFullYear();
             
-            // today = yyyy + '-' + mm + '-' + dd;
-
-
-
-            
-        
-
-                /**** */
-
-            // const d = new Date();
-            // let text = d.toLocaleDateString();
-            // text=text.replace("/",'-');
-            // text=text.replace("/",'-');
-
-
-            /**** */
             console.log(lastdate);
             const val=datedata[lastdate].total.confirmed;
-            // temptotalindan.push(val)
+            
             console.log(val);
 
             temparrayperstate.push(val);
-            /****** */
+          
 
 
 
-
-            // console.log(element);
-            // console.log(confirmedperstate);
-            // console.log(this.state.totalindian)
-            // console.log(confirmedperstate);
-            // const newarray=this.addarrays(this.state.totalindian,confirmedperstate);
            
         }
         this.setState({totalindian:temparrayperstate});
 
-        console.log(this.state.statesarray);
-        
-
-        // let demo=this.state.totalindian;
-
-    //    for (let i = 0; i < demo.length; i++) {
-    //        const element = demo[i];
-    //        if(element==NaN){
-    //         //    demo.splice(i,1,0);
-    //         demo[i]=0;
-    //        }
-    //    }
-
-      
+        console.log(this.state.statesarray);   
         console.log(this.state.totalindian);
 
     }
@@ -143,7 +90,7 @@ export default class Chartindia extends Component {
             data:this.state.totalindian,
             lineTension: 0.3,
             fill: true,
-            backgroundColor: "#fdc8d9",
+            backgroundColor: "rgb(253, 200, 217,0.5)",
             borderColor: "red",
             borderWidth: 1,
             pointRadius:3

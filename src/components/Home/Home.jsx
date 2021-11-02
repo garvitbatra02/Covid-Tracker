@@ -9,7 +9,7 @@ export default class Home extends Component {
                     
                 </div>
                 <div className="message" style={{justifyContent:"center",display:"flex",alignItems:"center"}}>
-                    <div className="mainmessage" style={{fontSize:"35px"}}>Let's stay safe and fight against cor<span className="corona"> <img src="https://www.clipartmax.com/png/full/212-2125897_corona-virus-icon-banana-leaf-print-plates.png" alt="" width="50px" />
+                    <div className="mainmessage" style={{fontSize:"35px"}}>Let's stay safe and fight against cor<span className="corona"><img src="https://www.clipartmax.com/png/full/212-2125897_corona-virus-icon-banana-leaf-print-plates.png" alt="" width="50px" />
                     </span>na virus together
                     </div> 
                 </div>
