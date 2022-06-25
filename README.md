@@ -6,21 +6,16 @@
 5. [Features](#features)
 ### General Info
 ***
-This web app is an online portal that enables users to register their close ones which are missing and provides interface to see their movement activities that has been tracked through our face recognition surveillance. It shows all the missing people with their images which has been reported by the stakeholder.  Agile Methodology was used for building this project. The best Agile practices adopted were :
-
-* Proper Planning
-* Keeping Product Backlog
-* Maintaining a SPRINT Burndown and a Product Burndown.
-* Adopting the concepts of relative estimation and velocity.
-
+As covid -19 has grown to a large scale a great number of people have been affected, so In this project going to implement a real time covid tracker app give giving information about covid -19 cases at a particular time of a particular state of India using JavaScript and its library react, it will use fetching of API’s and data extraction , and it will use concept of oops manipulating data received from API in form of JSON (JavaScript Object Notation) and handling those objects using classes and components in JavaScript. It will consist of an interactive UI with graphics for better interaction of web app with user.
+The app will give information about total confirmed cases, total recovered cases, total deaths and more information about India and other countries in the world dynamically updating itself every time, data is changed at the backend to give exact information to the user.
 
 
 ## Live Demo 
 ***
 
 
-* Documentation Link: https://drive.google.com/file/d/1BU0SRQpA34_FoaBTm4EeScGzy8bp9Bzk/view?usp=sharing
-* Demo Video: https://youtu.be/DLSFxclC47w
+* Documentation Link: https://drive.google.com/file/d/1JEaTmakwyBlCfDrzYskuF6CGAHFItm7T/view?usp=sharing
+* App Link: https://mystifying-poincare-ec65a7.netlify.app/
 
 ## 
 
