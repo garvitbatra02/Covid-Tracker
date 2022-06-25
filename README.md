@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+## Table of Contents
+1. [General Info](#general-info)
+2. [Live Demo](#live-demo)
+3. [Technologies](#technologies)
+4. [Installation](#installation)
+5. [Features](#features)
+### General Info
+***
+This web app is an online portal that enables users to register their close ones which are missing and provides interface to see their movement activities that has been tracked through our face recognition surveillance. It shows all the missing people with their images which has been reported by the stakeholder.  Agile Methodology was used for building this project. The best Agile practices adopted were :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Proper Planning
+* Keeping Product Backlog
+* Maintaining a SPRINT Burndown and a Product Burndown.
+* Adopting the concepts of relative estimation and velocity.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Live Demo 
+***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Documentation Link: https://drive.google.com/file/d/1BU0SRQpA34_FoaBTm4EeScGzy8bp9Bzk/view?usp=sharing
+* Demo Video: https://youtu.be/DLSFxclC47w
 
-### `npm test`
+## 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Screenshots
+* Home Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot](./screenshots/Capture1.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Add missing person
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot](./screenshots/Capture2.PNG) 
 
-### `npm run eject`
+* Missing people list
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot](./screenshots/Capture3.PNG)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Tracked locations of missing people and search option
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Screenshot](./screenshots/Capture4.PNG)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Initial UI for Survillence area
 
-## Learn More
+![Screenshot](./screenshots/Capture5.PNG)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Further process Mode to show further process how to take actions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot](./screenshots/Capture6.PNG)
 
-### Code Splitting
+* Working screenshots while detecting face
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot](./screenshots/Capture7.PNG)
 
-### Analyzing the Bundle Size
+![Screenshot](./screenshots/Capture8.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Whatsapp message recieved simulataneously after locations have been tracked
 
-### Making a Progressive Web App
+![Screenshot](./screenshots/capture9.jpeg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies
+***
+A list of technologies used within the project:
+* Face recognition
+* Whatsapp API
+* Node.js
+* Express
+* Open CV
+* MongoDB
+* React
+* Tailwind CSS
 
-### Advanced Configuration
+## Installation
+***
+A little intro about the installation. 
+```
+$ git clone https://github.com/garvitbatra02/Face_recognition_Finding_missing_people
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+In Node-js server MS
+```
+$ npm install
+$ node index.js
 
-### Deployment
+```
+In face_recognition 
+```
+$ pip install virtualenv
+$ virtualenv <my_env_name>
+$ source <my_env_name>/bin/activate
+$ pip install -r requirements.txt
+$ streamlit run main.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+In Frontend/frontend MS/msfrontend 
+```
+$ npm install
+$ npm start
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Features
+***
+FindOne features:
+* Interactive UI to show missing people
+* Real Time environment analysis to detect faces
+* Quick and fast Node js backend to support quick response of user detection to database
+* Less image degradation due to base64 transfer of image
+* Easy to operate missing people data
+* Show Time Stamp when a person detacted
+* Show accurate location of the person with longitude and latitude pointers
+* Pop up Notification of Whatsapp to registered stakeholder mobile number within microseonds
+
+* Search all locations of particular person by adhaar card
+## 
+
+
+
+## Mordern World Applications
+
+
+* How many people go missing each year?  
+
+    Missing people: of the 170,000 people reported missing nearly 98,000 are adults and more than 70,000 are children  
+    Missing incidents: of the 353,000 reported incidents, more than 137,000 incidents are adults and almost 215,000 incidents are children  
+    Looked after children are at high risk of being reported missing. 1 in 10 looked after children are reported missing compared to 1 in 200 children. Looked after children who are reported missing will be reported on average 6 times  
+
+* The number of cases shown above is quite large thus resolving each case is practically impossible by human.
+* Hence morden technology of face recognition used here can be used to detect missing people and computer vision makes it easy than human effort.
+* Here high accuracy of computer vision and machine learning algorithms has more accuracy than any human memory and eyes.
+* This system can be easily installed in CCTV cameras and 24/7 surveillance can be carried out
+* Further more integerations can be done like multiple models like a person has a particular marks on body due to disease which could also be recognized easiely.
+* This model can also be extended or modified to catch criminals .
+* It can also be installed in wildlife regions for detecting rare animal species and extinct ones since it is not safe for human to remain everywhere to capture them.
+* It can also be used by companies to detect hoarding overlayed in cities to determine density of advertisement.
+
+## 
